@@ -1,7 +1,22 @@
 {
-  "dependencies": {
+  "devDependencies": {
+    "esbuild": "0.24.2",
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5",
     "purescript": "^0.15.15",
     "purescript-language-server": "^0.18.4",
     "spago": "^0.21.0"
+  },
+  "scripts": {
+    "setup": "run-s setup:*",
+    "setup:install": "npm install",
+    "setup:deps": "npx spago build --deps-only",
+
+    "bundle": "run-s bundle:*",
+    "bundle:script": "npx spago bundle-app -y -t ./public/js/index.js",
+
+    "server": "run-p server:*",
+    "server:server": "npx live-server ./public --port=8080",
+    "server:script": "npx spago bundle-app -w -t ./public/js/index.js"
   }
 }

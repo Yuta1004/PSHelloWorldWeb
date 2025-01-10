@@ -4,18 +4,19 @@
 
 ```
 # Setup
-$ npm install
+$ npm run setup
 
 # Run
-$ npm exec spago run
-or
-$ spago run     # if `node_modules/.bin` is in PATH
+$ npm run server
 ```
 
 ## Packages
 
-### npm
+### npm (dev)
 
+- `esbuild`
+- `live-server`
+- `npm-run-all`
 - `purescript`
 - `purescript-language-server`
 - `spago`
