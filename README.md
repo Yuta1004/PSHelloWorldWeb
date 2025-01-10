@@ -6,7 +6,7 @@
 # Setup
 $ npm run setup
 
-# Run
+# Run (localhost:8080)
 $ npm run server
 ```
 
