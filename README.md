@@ -14,6 +14,12 @@ $ spago run     # if `node_modules/.bin` is in PATH
 
 ## Packages
 
+### npm
+
 - `purescript`
 - `purescript-language-server`
 - `spago`
+
+### spago
+
+- `halogen`
