@@ -1,4 +1,4 @@
-# PureScript Hello World
+# PureScript Hello World (Web)
 
 ## Command
 
