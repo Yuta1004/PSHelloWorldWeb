@@ -11,5 +11,4 @@ generated-docs/
 .spago/
 
 # Auto generated files
-public/**/*.purs.js
-public/**/*.tailwind.css
+dist/

@@ -12,14 +12,17 @@
     "setup": "run-s setup:*",
     "setup:install": "npm install",
     "setup:deps": "npx spago build --deps-only",
+    "setup:dist": "mkdir -p dist",
 
     "bundle": "run-s bundle:*",
-    "bundle:script": "npx spago bundle-app -y -t ./public/js/index.purs.js",
-    "bundle:css": "npx tailwindcss -m -i design/index.css -o ./public/css/index.tailwind.css",
+    "bundle:html": "cp public/index.html dist/",
+    "bundle:script": "npx spago bundle-app -y -t ./dist/js/index.js",
+    "bundle:css": "npx tailwindcss -m -i public/index.css -o ./dist/css/index.css",
 
     "server": "run-p server:*",
-    "server:server": "npx live-server ./public --port=8080",
-    "server:script": "npx spago bundle-app -w -t ./public/js/index.purs.js",
-    "server:css": "npx tailwindcss -W -i design/index.css -o ./public/css/index.tailwind.css"
+    "server:server": "npx live-server ./dist --port=8080",
+    "server:html": "cp public/index.html dist/",
+    "server:script": "npx spago bundle-app -w -t ./dist/js/index.js",
+    "server:css": "npx tailwindcss -W -i public/index.css -o ./dist/css/index.css"
   }
 }
