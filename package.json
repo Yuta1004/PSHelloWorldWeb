@@ -6,7 +6,8 @@
     "purescript": "^0.15.15",
     "purescript-language-server": "^0.18.4",
     "spago": "^0.21.0",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.4.17",
+    "watch": "^1.0.2"
   },
   "scripts": {
     "setup": "run-s setup:*",
@@ -23,6 +24,6 @@
     "server:server": "npx live-server ./dist --port=8080",
     "server:html": "cp public/index.html dist/",
     "server:script": "npx spago bundle-app -w -t ./dist/js/index.js",
-    "server:css": "npx tailwindcss -W -i public/index.css -o ./dist/css/index.css"
+    "server:css": "watch 'npx tailwindcss -i public/index.css -o ./dist/css/index.css' ./src ./public"
   }
 }

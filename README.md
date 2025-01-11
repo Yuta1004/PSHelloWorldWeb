@@ -29,6 +29,7 @@ $ npm run server
 - `esbuild`
 - `live-server`
 - `npm-run-all`
+- `watch`
 
 ### spago
 
