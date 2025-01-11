@@ -10,5 +10,6 @@ generated-docs/
 .psa*
 .spago/
 
-# Public Dir
-public/js/
+# Auto generated files
+public/**/*.purs.js
+public/**/*.tailwind.css

@@ -10,16 +10,25 @@ $ npm run setup
 $ npm run server
 ```
 
-## Packages
+## Dependencites
 
 ### npm (dev)
+
+#### Design
+
+- `tailwindcss`
+
+#### UI
+
+- `purescript`
+- `purescript-language-server`
+- `spago`
+
+#### Others
 
 - `esbuild`
 - `live-server`
 - `npm-run-all`
-- `purescript`
-- `purescript-language-server`
-- `spago`
 
 ### spago
 

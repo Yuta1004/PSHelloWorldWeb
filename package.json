@@ -5,7 +5,8 @@
     "npm-run-all": "^4.1.5",
     "purescript": "^0.15.15",
     "purescript-language-server": "^0.18.4",
-    "spago": "^0.21.0"
+    "spago": "^0.21.0",
+    "tailwindcss": "^3.4.17"
   },
   "scripts": {
     "setup": "run-s setup:*",
@@ -13,10 +14,12 @@
     "setup:deps": "npx spago build --deps-only",
 
     "bundle": "run-s bundle:*",
-    "bundle:script": "npx spago bundle-app -y -t ./public/js/index.js",
+    "bundle:script": "npx spago bundle-app -y -t ./public/js/index.purs.js",
+    "bundle:css": "npx tailwindcss -m -i design/index.css -o ./public/css/index.tailwind.css",
 
     "server": "run-p server:*",
     "server:server": "npx live-server ./public --port=8080",
-    "server:script": "npx spago bundle-app -w -t ./public/js/index.js"
+    "server:script": "npx spago bundle-app -w -t ./public/js/index.purs.js",
+    "server:css": "npx tailwindcss -W -i design/index.css -o ./public/css/index.tailwind.css"
   }
 }
