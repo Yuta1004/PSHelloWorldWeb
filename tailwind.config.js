@@ -1,6 +1,6 @@
 module.exports = {
   content: [
-    "./src/**/*.purs",
+    "./src/UI/**/*.purs",
     "./public/**/*.html"
   ]
 }
