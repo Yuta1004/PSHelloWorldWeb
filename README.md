@@ -10,6 +10,11 @@ $ npm run setup
 $ npm run server
 ```
 
+## Directories
+
+- [src/Counter](./src/Counter) : カウンタ本体 (lib)
+- [src/UI](./src/UI) : UI 制御 (exe)
+
 ## Dependencites
 
 ### npm (dev)
