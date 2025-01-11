@@ -17,13 +17,13 @@
 
     "bundle": "run-s bundle:*",
     "bundle:html": "cp public/index.html dist/",
-    "bundle:script": "npx spago bundle-app -y -t ./dist/js/index.js",
+    "bundle:script": "npx spago bundle-app -y -m UI.Main -t ./dist/js/index.js",
     "bundle:css": "npx tailwindcss -m -i public/index.css -o ./dist/css/index.css",
 
     "server": "run-p server:*",
     "server:server": "npx live-server ./dist --port=8080",
     "server:html": "cp public/index.html dist/",
-    "server:script": "npx spago bundle-app -w -t ./dist/js/index.js",
+    "server:script": "npx spago bundle-app -w -m UI.Main -t ./dist/js/index.js",
     "server:css": "watch 'npx tailwindcss -i public/index.css -o ./dist/css/index.css' ./src ./public"
   }
 }
