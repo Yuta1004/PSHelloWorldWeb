@@ -1,4 +1,4 @@
-module Component.Counter.Model
+module Model.Counter
     ( Counter
     , mkCounter
     , incr

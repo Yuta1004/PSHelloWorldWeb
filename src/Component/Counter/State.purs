@@ -1,6 +1,6 @@
 module Component.Counter.State (State, initialState) where
 
-import Component.Counter.Model (Counter, mkCounter)
+import Model.Counter (Counter, mkCounter)
 
 type State = { counter :: Counter }
 
