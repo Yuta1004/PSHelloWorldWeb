@@ -1,6 +1,6 @@
 module UI.Component.Counter.State (State, initialState) where
 
-import Counter (Counter, mkCounter)
+import Counter.Counter (Counter, mkCounter)
 
 type State = { counter :: Counter }
 

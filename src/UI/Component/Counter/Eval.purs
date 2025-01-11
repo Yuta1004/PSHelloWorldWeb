@@ -4,7 +4,7 @@ import Prelude
 
 import Halogen (HalogenM, HalogenQ, mkEval, defaultEval, modify_)
 
-import Counter (incr, decr)
+import Counter.Counter (incr, decr)
 import UI.Component.Counter.State (State)
 
 eval :: forall q i o m a. HalogenQ q Action i a -> HalogenM State Action () o m a

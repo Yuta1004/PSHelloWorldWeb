@@ -1,4 +1,4 @@
-module Counter
+module Counter.Counter
     ( Counter
     , mkCounter
     , incr
