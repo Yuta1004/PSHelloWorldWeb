@@ -1,4 +1,4 @@
-module Model.Counter
+module Counter
     ( Counter
     , mkCounter
     , incr

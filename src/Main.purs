@@ -6,7 +6,7 @@ import Effect (Effect)
 import Halogen.Aff (awaitBody, runHalogenAff)
 import Halogen.VDom.Driver (runUI)
 
-import Component.Counter (counter)
+import UI.Component.Counter (counter)
 
 main :: Effect Unit
 main = runHalogenAff do

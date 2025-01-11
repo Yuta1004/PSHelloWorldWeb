@@ -1,4 +1,4 @@
-module Component.Counter.View (render) where
+module UI.Component.Counter.View (render) where
 
 import Prelude
 
@@ -7,8 +7,8 @@ import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
 import Halogen.HTML.Properties as HP
 
-import Component.Counter.Eval (Action(..))
-import Component.Counter.State (State)
+import UI.Component.Counter.Eval (Action(..))
+import UI.Component.Counter.State (State)
 
 render :: forall w. State -> HH.HTML w Action
 render s =

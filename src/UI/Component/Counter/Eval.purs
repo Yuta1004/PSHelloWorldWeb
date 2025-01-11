@@ -1,11 +1,11 @@
-module Component.Counter.Eval (Action(..), eval) where
+module UI.Component.Counter.Eval (Action(..), eval) where
 
 import Prelude
 
 import Halogen (HalogenM, HalogenQ, mkEval, defaultEval, modify_)
 
-import Component.Counter.State (State)
-import Model.Counter (incr, decr)
+import Counter (incr, decr)
+import UI.Component.Counter.State (State)
 
 eval :: forall q i o m a. HalogenQ q Action i a -> HalogenM State Action () o m a
 eval = mkEval $ defaultEval { handleAction = handleAction }
